@@ -9,17 +9,6 @@
 
 \allowdisplaybreaks
 
-%Useful definitions
-\providecommand{\Rie}[3]{\mathcal{R}_{#1}{}^{ #2}{}_{#3}}
-\providecommand{\ctG}[3]{\Gamma_{#1}{}^{ #2}{}_{#3}}
-\providecommand{\ctg}[3]{\gamma_{#1}{}^{ #2}{}_{#3}}
-\providecommand{\B}[3]{\mathcal{B}_{#1}{}^{ #2}{}_{#3}}
-\providecommand{\P}[3]{\mathcal{P}_{#1}{}^{ #2}{}_{#3}}
-\providecommand{\A}[1]{\mathcal{A}_{#1}}
-\providecommand{\Ri}[1]{\mathcal{R}_{#1}}
-\providecommand{\deV}[1]{\mathrm{d}V^{#1}}
-
-
 \title{A decade of Polynomial Affine model of Gravity}
 \author{Jos\'e Perdiguero G\'arate}
 
@@ -43,7 +32,7 @@
 \begin{aligned}
     \label{affine_connection}
     \hat{\Gamma}_{\alpha}{}^{\beta}{}_{\gamma} & = \hat{\Gamma}_{(\alpha}{}^{\beta}{}_{\gamma)} +  \hat{\Gamma}_{[\alpha}{}^{\beta}{}_{\gamma]},  \\
-    & = \ctG{\alpha}{\beta}{\gamma} + \B{\alpha}{\beta}{\gamma} + \delta^{\beta}_{[\gamma}\A{\alpha]},
+    & = \Gamma_{\alpha}{}^{\beta}{}_{\gamma} + \mathcal{B}_{\alpha}{}^{\beta}{}_{\gamma} + \delta^{\beta}_{[\gamma}\mathcal{A}_{\alpha]},
 \end{aligned}
 \end{equation}
 
@@ -125,6 +114,17 @@
 
 \subsection{Coupling a scalar field}
 \label{subsec:coupling a scalar field}
+
+\begin{equation}
+        \mathcal{K}^{\mu\nu} = \alpha \nabla_\lambda \mathcal{B}_{\rho}{}^{(\mu}{}_{\sigma}\mathrm{d}V^{\nu) \lambda\rho\sigma}
+        + \beta \mathcal{A}_\lambda \mathcal{B}_{\rho}{}^{(\mu}{}_{\sigma}\mathrm{d}V^{\nu) \lambda\rho\sigma} 
+        + \gamma \mathcal{B}_{\kappa}{}^{(\mu}{}_{\lambda} \mathcal{B}_{\rho}{}^{(\nu}{}_{\sigma}\mathrm{d}V^{\kappa\lambda\rho\sigma},
+\end{equation}
+
+\begin{equation}
+    \label{PAG_4D_scalar_field}
+    S_\phi = -\int \mathcal{K}^{\mu\nu}\partial_\mu \phi\partial_\nu \phi
+\end{equation}
 
 \subsection{Building ansatz}
 \label{subsec:building ansatz}
